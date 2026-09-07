@@ -563,41 +563,71 @@ Specifically, the product aims to:
 
 **Sign in**
 <br/>
-<img src="./docs/screenshots/login-page.png" width="850" />
+<img src="./Meridian%20Screenshot/Login%20page.png" width="850" />
 
 <br/><br/>
 
 **Create an account**
 <br/>
-<img src="./docs/screenshots/signup-page.png" width="850" />
+<img src="./Meridian%20Screenshot/Sign_up%20page.png" width="850" />
 
 <br/><br/>
 
 **Dashboard — submit a new brief**
 <br/>
-<img src="./docs/screenshots/dashboard.png" width="850" />
+<img src="./Meridian%20Screenshot/Dashboard.png" width="850" />
 
 <br/><br/>
 
 **Live pipeline — research in progress**
 <br/>
-<img src="./docs/screenshots/research-progress.png" width="850" />
+<img src="./Meridian%20Screenshot/Research%20Page.png" width="850" />
 
 <br/><br/>
 
-**Report view — synthesized findings**
+**Report view**
 <br/>
-<img src="./docs/screenshots/report-view.png" width="850" />
+<img src="./Meridian%20Screenshot/Report%20Page.png" width="850" />
+
+<br/><br/>
+
+**Report view — key findings**
+<br/>
+<img src="./Meridian%20Screenshot/Report%20Findings.png" width="850" />
 
 <br/><br/>
 
 **Evidence tab — every claim traced to a source**
 <br/>
-<img src="./docs/screenshots/report-evidence.png" width="850" />
+<img src="./Meridian%20Screenshot/Report%20Evidences.png" width="850" />
+
+<br/><br/>
+
+**Sources tab — original links behind every claim**
+<br/>
+<img src="./Meridian%20Screenshot/Report%20Sources.png" width="850" />
+
+<br/><br/>
+
+**Methodology page**
+<br/>
+<img src="./Meridian%20Screenshot/Methodology%20Page.png" width="850" />
+
+<br/><br/>
+
+**About page**
+<br/>
+<img src="./Meridian%20Screenshot/About%20Page.png" width="850" />
+
+<br/><br/>
+
+**Dark mode**
+<br/>
+<img src="./Meridian%20Screenshot/Dark%20mode.png" width="850" />
 
 </div>
 
-> These images live in `docs/screenshots/` — make sure that folder is committed to the repo so they render on GitHub.
+> Screenshots live in the `Meridian Screenshot/` folder at the repo root.
 
 <br/>
 
