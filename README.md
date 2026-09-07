@@ -559,19 +559,45 @@ Specifically, the product aims to:
 
 ## Screenshots
 
-> Add screenshots of the running app here — for example, the Dashboard, the live Research Progress screen, and the Report / Evidence / Sources view. Drop image files into a `docs/screenshots/` folder in the repo, then use:
-
-```md
 <div align="center">
-<img src="./docs/screenshots/dashboard.png" width="800" />
-<br/><br/>
-<img src="./docs/screenshots/research-progress.png" width="800" />
-<br/><br/>
-<img src="./docs/screenshots/report-view.png" width="800" />
-</div>
-```
 
-GitHub renders these automatically once the images are pushed to the repo.
+**Sign in**
+<br/>
+<img src="./docs/screenshots/login-page.png" width="850" />
+
+<br/><br/>
+
+**Create an account**
+<br/>
+<img src="./docs/screenshots/signup-page.png" width="850" />
+
+<br/><br/>
+
+**Dashboard — submit a new brief**
+<br/>
+<img src="./docs/screenshots/dashboard.png" width="850" />
+
+<br/><br/>
+
+**Live pipeline — research in progress**
+<br/>
+<img src="./docs/screenshots/research-progress.png" width="850" />
+
+<br/><br/>
+
+**Report view — synthesized findings**
+<br/>
+<img src="./docs/screenshots/report-view.png" width="850" />
+
+<br/><br/>
+
+**Evidence tab — every claim traced to a source**
+<br/>
+<img src="./docs/screenshots/report-evidence.png" width="850" />
+
+</div>
+
+> These images live in `docs/screenshots/` — make sure that folder is committed to the repo so they render on GitHub.
 
 <br/>
 
