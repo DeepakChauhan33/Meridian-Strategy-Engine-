@@ -666,7 +666,6 @@ Meridian is designed so a report is never presented as more reliable than the ev
 
 ## Performance Metrics
 
-> Template — replace with your team's measured numbers.
 
 | Metric | Value |
 |---|---|
