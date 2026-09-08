@@ -702,7 +702,6 @@ Meridian is designed so a report is never presented as more reliable than the ev
 - **Sequential task execution** — research tasks from the Planner are processed one after another rather than in parallel, adding to total runtime on multi-task briefs.
 - **`memory_records` is unused today** — the `pgvector` table exists in the schema for future semantic recall but isn't yet read from or written to by the pipeline.
 
-> Adjust this list to match what your team has actually observed in testing.
 
 <br/>
 
