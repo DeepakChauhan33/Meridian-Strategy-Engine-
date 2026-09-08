@@ -539,7 +539,7 @@ Doing market research properly is slow and expensive. Getting a credible answer 
 
 This is slow, doesn't scale, and the sourcing trail is often lost by the time findings reach a final report. Meridian's problem statement: **give anyone the ability to get a sourced, structured market analysis on demand, without the cost or turnaround time of a traditional research process.**
 
-> *Draft based on the project's architecture — replace with your team's exact framing if it differs.*
+
 
 <br/>
 
@@ -553,7 +553,7 @@ Specifically, the product aims to:
 - Attach a verifiable citation trail to every claim in the final report
 - Present findings through a clean, decision-maker-friendly interface (Report / Evidence / Sources tabs)
 
-> *Draft — adjust to match your team's original goal statement.*
+
 
 <br/>
 
