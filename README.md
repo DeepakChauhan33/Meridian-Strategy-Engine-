@@ -299,6 +299,45 @@ SUPABASE_KEY=            # SERVICE ROLE key — backend only, never expose to th
 
 <br/>
 
+API Endpoints
+
+All routes are served by the FastAPI backend. Every route except / and /health requires a valid Supabase-issued bearer token, and every job-scoped route additionally checks that the requesting user actually owns that job.
+
+Base URL: http://localhost:8000 locally, or your deployed backend URL in production. Interactive docs: FastAPI auto-generates a live, always-current reference at /docs (Swagger UI) and /redoc.
+
+Auth header — required on every route below except the first two:
+
+Authorization: Bearer <supabase-access-token>
+Method	Route	Auth	Purpose
+GET	/	No	Service metadata / liveness check
+GET	/health	No	Health check for uptime monitors / deploy platforms
+GET	/api/research/	Yes	List all research jobs owned by the current user
+POST	/api/research/	Yes	Submit a new brief — runs the full 7-agent pipeline synchronously and returns the completed job
+GET	/api/research/{job_id}	Yes	Fetch a single job's status and metadata
+GET	/api/research/{job_id}/tasks	Yes	Planner-generated research tasks for that job
+GET	/api/research/{job_id}/sources	Yes	Sources discovered during research
+GET	/api/research/{job_id}/evidence	Yes	Extracted evidence items
+GET	/api/research/{job_id}/validations	Yes	Validation verdicts per evidence item
+GET	/api/research/{job_id}/report	Yes	The final generated report
+
+Example — submit a new research job
+
+bash
+curl -X POST "http://localhost:8000/api/research/" \
+  -H "Authorization: Bearer <supabase-access-token>" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Assess the competitive landscape of the EV battery market in Southeast Asia"}'
+
+Example — fetch a completed report
+
+bash
+curl "http://localhost:8000/api/research/<job_id>/report" \
+  -H "Authorization: Bearer <supabase-access-token>"
+
+A valid token for a different user hitting any /api/research/{job_id}/... route returns a 403, even if they know the job's UUID — ownership is enforced server-side on every call, not just checked at the UI layer.
+
+<br/>
+
 ## Frontend — React + Vite Dashboard
 
 **Location:** `Frontend McKinsey/vite-project/`
